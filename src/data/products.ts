@@ -1,0 +1,126 @@
+import appleImg from "../assests/images/apple.svg";
+import bananaImg from "../assests/images/banana.svg";
+import cocaColaImg from "../assests/images/coca-cola.svg";
+import eggsRedImg from "../assests/images/eggs-red.svg";
+import gingerImg from "../assests/images/ginger.svg";
+import meatImg from "../assests/images/meat.svg";
+import redPaprikaImg from "../assests/images/red-paprika.svg";
+import spriteImg from "../assests/images/sprite.svg";
+import {ProductCategory, type Product} from "../types/product.types";
+
+export const products: Product[] = [
+  {
+    id: "organic-bananas",
+    name: "Organic Bananas",
+    category: ProductCategory.FreshFruitsVegetables,
+    unit: "7pcs, Priceg",
+    price: 4.99,
+    description:
+      "Sweet ripe bananas for snacking, smoothies, and breakfast bowls.",
+    imageUrl: bananaImg,
+    rating: 4.8,
+    inStock: true,
+    isExclusiveOffer: true,
+    brand: "Individual Collection",
+  },
+  {
+    id: "red-apple",
+    name: "Red Apple",
+    category: ProductCategory.FreshFruitsVegetables,
+    unit: "1kg, Priceg",
+    price: 4.99,
+    description:
+      "Crisp red apples with a juicy bite and naturally sweet finish.",
+    imageUrl: appleImg,
+    rating: 4.7,
+    inStock: true,
+    isExclusiveOffer: true,
+    nutrition: "100g",
+  },
+  {
+    id: "bell-pepper-red",
+    name: "Bell Pepper Red",
+    category: ProductCategory.FreshFruitsVegetables,
+    unit: "1kg, Price",
+    price: 4.99,
+    description:
+      "Bright red peppers with a crunchy texture for salads and stir fries.",
+    imageUrl: redPaprikaImg,
+    rating: 4.5,
+    inStock: true,
+    isPopular: true,
+    brand: "Cocola",
+  },
+  {
+    id: "ginger",
+    name: "Ginger",
+    category: ProductCategory.FreshFruitsVegetables,
+    unit: "250gm, Price",
+    price: 2.99,
+    description: "Fresh ginger root with a warm, aromatic flavor.",
+    imageUrl: gingerImg,
+    rating: 4.4,
+    inStock: true,
+    isPopular: true,
+  },
+  {
+    id: "sprite-can",
+    name: "Sprite Can",
+    category: ProductCategory.Beverages,
+    unit: "325ml, Price",
+    price: 1.5,
+    description: "Lemon-lime sparkling soft drink served chilled.",
+    imageUrl: spriteImg,
+    rating: 4.6,
+    inStock: true,
+    brand: "Cocola",
+  },
+  {
+    id: "diet-coke",
+    name: "Diet Coke",
+    category: ProductCategory.Beverages,
+    unit: "355ml, Price",
+    price: 1.99,
+    description: "Classic cola taste with zero sugar.",
+    imageUrl: cocaColaImg,
+    rating: 4.3,
+    inStock: true,
+    brand: "Cocola",
+  },
+  {
+    id: "egg-chicken-red",
+    name: "Egg Chicken Red",
+    category: ProductCategory.DairyEggs,
+    unit: "4pcs, Price",
+    price: 1.99,
+    description: "Fresh red chicken eggs packed for everyday meals.",
+    imageUrl: eggsRedImg,
+    rating: 4.4,
+    inStock: true,
+    brand: "Kazi Farms",
+  },
+  {
+    id: "egg-noodles",
+    name: "Egg Noodles",
+    category: ProductCategory.BakerySnacks,
+    unit: "2L, Price",
+    price: 15.99,
+    description: "Quick-cooking noodles for snacks and easy dinners.",
+    imageUrl: eggsRedImg,
+    rating: 4.1,
+    inStock: false,
+    brand: "Ifad",
+  },
+  {
+    id: "broiler-chicken",
+    name: "Broiler Chicken",
+    category: ProductCategory.MeatFish,
+    unit: "1kg, Priceg",
+    price: 4.99,
+    description: "Fresh broiler chicken ready for cooking.",
+    imageUrl: meatImg,
+    rating: 4.5,
+    inStock: true,
+    isPopular: true,
+  },
+];
